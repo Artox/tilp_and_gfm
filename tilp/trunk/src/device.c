@@ -127,7 +127,7 @@ static void clist_populate(GtkListStore *_store, int full)
 		tilp_device_probe_all(&array);
 
 		for(i = CABLE_GRY; i <= CABLE_USB; i++)
-		for(j = PORT_1; j <= PORT_4; j++)
+		for(j = PORT_1; j < PORT_MAX; j++)
 		if(array[i][j] != CALC_NONE)
 		{
 			GtkTreeIter iter;

@@ -51,7 +51,7 @@ static int found_port(int *ports)
 {
 	int i;
 
-	for(i = PORT_1; i <= PORT_4; i++)
+	for(i = PORT_1; i < PORT_MAX; i++)
 		if(ports[i])
 			return i;
 
@@ -171,7 +171,7 @@ int tilp_device_probe_all(int ***result)
 		// Is there at least 1 cable ?
 		for (cable = CABLE_GRY; cable <= CABLE_MAX; cable++)
 		{
-			for (port = PORT_1; port <= PORT_4; port++)
+			for (port = PORT_1; port < PORT_MAX; port++)
 			{
 				if (array[cable][port])
 				{
@@ -187,7 +187,7 @@ int tilp_device_probe_all(int ***result)
 		// search for devices on all cables
 		for (cable = CABLE_GRY; cable <= CABLE_USB; cable++)
 		{
-			for (port = PORT_1; port <= PORT_4; port++)
+			for (port = PORT_1; port < PORT_MAX; port++)
 			{
 				if (!array[cable][port])
 				{
