@@ -77,6 +77,18 @@
       <row>
         <col id="0" translatable="yes">#4</col>
       </row>
+      <row>
+        <col id="0" translatable="yes">USB#1</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">USB#2</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">USB#3</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">USB#4</col>
+      </row>
     </data>
   </object>
   <object class="GtkListStore" id="model3">
